@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>BMI Calculator</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <style>
+        .btn {
+            width: 80px;
+        }
+    </style>
+</head>
+
+<body style="background-color: black;">
+    <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <table class="table w-25 table-success border border-3 shadow">
+            <tr>
+                <th colspan="2">
+                    BMI Calculator
+                </th>
+            </tr>
+            <tr>
+                <td>Weight (kg):</td>
+                <td><input type="number" id="weight" class="form-control"></td>
+            </tr>
+            <tr>
+                <td>Height (cm):</td>
+                <td><input type="number" id="height" class="form-control"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button class="btn btn-dark w-100" onclick="calculateBMI()">Calculate BMI</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="text" id="bmiResult" class="form-control" placeholder="BMI Result" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button class="btn btn-warning w-100" onclick="clearF()">Clear</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
+
+
